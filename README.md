@@ -14,11 +14,13 @@ You are free to use this software package to analyse your fluctuation and all de
   
 </table>
 
-<div align=center> `SACD result of fluctuation images and comparison between SACD and SRRF using live-cell imaging data. <br />
-  (a) Mean wide-field image, (b) SRRF reconstructed image with 200 frames, (c) SRRF reconstructed image with 16 frames <br />
-  SACD reconstructed image, (d) SACD reconstructed image, (e) Right: MPAC and error map between MPAC and AC image; <br />
-  left: SACD reconstructed image without first and second deconvolution step. (f) Normalized line profiles taken <br />
-  from the regions between the yellow arrowheads for corresponding images in (a), (b) and (d) showing separated <br />
-  features. Scale bar 1.5 μm. AC: auto-correlation.`</div align=center>
+<div align=center> 
+  `SACD result of fluctuation images and comparison between SACD and SRRF using live-cell imaging data. (a) Mean wide
+  -field image, (b) SRRF reconstructed image with 200 frames, (c) SRRF reconstructed image with 16 frames SACD recons-
+  tructed image, (d) SACD reconstructed image, (e) Right: MPAC and error map between MPAC and AC image; left: SACD 
+  reconstructed image without first and second deconvolution step. (f) Normalized line profiles taken from the regions 
+  between the yellow arrowheads for corresponding images in (a), (b) and (d) showing separated features. 
+  Scale bar 1.5 μm. AC: auto-correlation.`
+</div align=center>
 
 <font color=gray size=20>color=gray</font>
