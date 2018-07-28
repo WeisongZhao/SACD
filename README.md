@@ -13,7 +13,7 @@ You are free to use this software package to analyse your fluctuation and all de
   <div align=center><center><img src="./images/1.jpg" height="580"></center>
   
 </table>
-#### Image description
+#### Image description <br />
 `SACD result of fluctuation images and comparison between SACD and SRRF using live-cell imaging data.`<br />
 ```python
 (a) Mean wide-field image,
