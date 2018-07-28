@@ -45,7 +45,7 @@ Scale bar (a) 2 μm; (c) 500 nm.
 
 ### Reference
 > [1].RHenriques-Lab, "NanoJ-SRRF, https://bitbucket.org/rhenriqueslab/nanoj-srrf/downloads/,".<br />
-> [2].B. I. Group, "Benchmarking of Single-Molecule Localization Microscopy Software (EPFL, Lausanne, 2015).  http://bigwww.epfl.ch/smlm/,".<br />
+> [2].B. I. Group, "Benchmarking of Single-Molecule Localization Microscopy Software (EPFL, Lausanne, 2015). http://bigwww.epfl.ch/smlm/,".<br />
 > [3].M. Ovesný, P. Křížek, J. Borkovec, Z. Švindrych, and G. M. Hagen, "ThunderSTORM: A comprehensive ImageJ plug-in for PALM and STORM data analysis and super-resolution imaging," Bioinformatics 30(16), 2389–2390 (2014).<br />
 > [4].M. Leutenegger, "Balanced SOFI toolbox, (EPFL). http://documents.epfl.ch/users/l/le/leuteneg/www/BalancedSOFI/index.html,".<br />
 > [5].I. Yahiatene, S. Hennig, M. Müller, and T. Huser, "Entropy-based super-resolution imaging (ESI): from disorder to fine detail," ACS Photonics 2(8), 1049–1056 (2015).<br />
