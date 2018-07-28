@@ -44,12 +44,12 @@ Scale bar (a) 2 μm; (c) 500 nm.
 <br />
 
 ### Reference
-> [1].RHenriques-Lab, "NanoJ-SRRF, Https://bitbucket.org/rhenriqueslab/nanoj-srrf/downloads/,".
-> [2].B. I. Group, "Benchmarking of Single-Molecule Localization Microscopy Software (EPFL, Lausanne, 2015).  http://bigwww.epfl.ch/smlm/,".
-> [3].M. Ovesný, P. Křížek, J. Borkovec, Z. Švindrych, and G. M. Hagen, "ThunderSTORM: A comprehensive ImageJ plug-in for PALM and STORM data analysis and super-resolution imaging," Bioinformatics 30(16), 2389–2390 (2014).
+> [1].RHenriques-Lab, "NanoJ-SRRF, https://bitbucket.org/rhenriqueslab/nanoj-srrf/downloads/,".<br />
+> [2].B. I. Group, "Benchmarking of Single-Molecule Localization Microscopy Software (EPFL, Lausanne, 2015).  http://bigwww.epfl.ch/smlm/,".<br />
+> [3].M. Ovesný, P. Křížek, J. Borkovec, Z. Švindrych, and G. M. Hagen, "ThunderSTORM: A comprehensive ImageJ plug-in for PALM and STORM data analysis and super-resolution imaging," Bioinformatics 30(16), 2389–2390 (2014).<br />
 > [4].M. Leutenegger, "Balanced SOFI toolbox, (EPFL). http://documents.epfl.ch/users/l/le/leuteneg/www/BalancedSOFI/index.html," .
-> [5].I. Yahiatene, S. Hennig, M. Müller, and T. Huser, "Entropy-based super-resolution imaging (ESI): from disorder to fine detail," ACS Photonics 2(8), 1049–1056 (2015).
-> [6].D. S. C. Biggs and M. Andrews, "Acceleration of iterative image restoration algorithms," Appl. Opt. 36(8), 1766–1775 (1997).
-> [7].T. Dertinger, R. Colyer, G. Iyer, S. Weiss, and J. Enderlein, "Fast, background-free, 3D super-resolution optical fluctuation imaging (SOFI)," Proc. Natl. Acad. Sci. 106(52), 22287–22292 (2009).
+> [5].I. Yahiatene, S. Hennig, M. Müller, and T. Huser, "Entropy-based super-resolution imaging (ESI): from disorder to fine detail," ACS Photonics 2(8), 1049–1056 (2015).<br />
+> [6].D. S. C. Biggs and M. Andrews, "Acceleration of iterative image restoration algorithms," Appl. Opt. 36(8), 1766–1775 (1997).<br />
+> [7].T. Dertinger, R. Colyer, G. Iyer, S. Weiss, and J. Enderlein, "Fast, background-free, 3D super-resolution optical fluctuation imaging (SOFI)," Proc. Natl. Acad. Sci. 106(52), 22287–22292 (2009).<br />
 
 
