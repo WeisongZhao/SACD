@@ -1,4 +1,4 @@
-# SACD
+# SACD(**S**uper-resolution with **A**uto-**C**orrelation two-step **D**econvolution)
 
 ### Introduction
 This profile includding source code of the work: "**Temporal resolution enhancement in super-resolution imaging with auto-correlation two-step deconvolution**".<br />
