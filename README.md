@@ -14,7 +14,7 @@ You are free to use this software package to analyse your fluctuation and all de
   <div align=center><center><img src="./images/1.jpg" height="580"></center>
   
 </table>
-##### Image description
+
 `SACD result of fluctuation images and comparison between SACD and SRRF using live-cell imaging data.`<br />
 ```python
 (a) Mean wide-field image,
@@ -24,5 +24,19 @@ You are free to use this software package to analyse your fluctuation and all de
 (e) Right: MPAC and error map between MPAC and AC image; left: SACD reconstructed image without first and second deconvolution step. (f) Normalized line profiles taken from the regions between the yellow arrowheads for corresponding images in (a), (b) and (d) showing separated features. 
 Scale bar 1.5 μm. AC: auto-correlation.
 ```
-
+<br />
+#### High density SMLM data
+<table >
+  
+  <div align=center><center><img src="./images/2.jpg" height="580"></center>
+  
+</table>
+##### Image description
+`SACD result of high density SMLM images and comparison with the other super-resolution methods. `
+```python
+(a)-(b) The meaned wide-field image and the reconstructed images: 256 and 16 frames. 
+(c) The magnified result of white boxed region. 
+(d) Profiles of the projection through the dotted lines in (a). 
+Scale bar (a) 2 μm; (c) 500 nm.
+```
 
