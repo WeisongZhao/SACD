@@ -23,7 +23,7 @@ You are free to use this software package to analyse your fluctuation and all de
 (d) SACD reconstructed image,
 (e) Right: MPAC and error map between MPAC and AC image; left: SACD reconstructed image without first and second deconvolution step. (f) Normalized line profiles taken from the regions between the yellow arrowheads for corresponding images in (a), (b) and (d) showing separated features. 
 Scale bar 1.5 μm. AC: auto-correlation.
-```
+```<br />
 #### High density SMLM data
 <table >
   
