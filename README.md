@@ -7,14 +7,13 @@ You are free to use this software package to analyse your fluctuation and all de
 ### Denpendency
 * >Matlab 7.0
 
-### Some results:
-#### Fluctuation data 
+### Fluctuation data result 
 <table >
   
   <div align=center><center><img src="./images/1.jpg" height="580"></center>
   
 </table>
-
+#### Image description
 `SACD result of fluctuation images and comparison between SACD and SRRF using live-cell imaging data.`<br />
 ```python
 (a) Mean wide-field image,
@@ -25,13 +24,13 @@ You are free to use this software package to analyse your fluctuation and all de
 Scale bar 1.5 μm. AC: auto-correlation.
 ```
 <br />
-#### High density SMLM data
+### High density SMLM data result 
 <table >
   
   <div align=center><center><img src="./images/2.jpg" height="580"></center>
   
 </table>
-##### Image description
+#### Image description
 `SACD result of high density SMLM images and comparison with the other super-resolution methods. `
 ```python
 (a)-(b) The meaned wide-field image and the reconstructed images: 256 and 16 frames. 
