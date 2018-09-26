@@ -11,7 +11,7 @@ function result=Accelaration_DeconvLucy(data,psf,iteration,method)
 %------------------------------------------------
 % reference:
 % [1].D. S. C. Biggs and M. Andrews, "Acceleration of iterative image restoration
-% algorithms," Appl. Opt. 36(8), 1766¨C1775 (1997).
+% algorithms," Appl. Opt. 36(8), 1766Â¨C1775 (1997).
 
 %   Copyright  2018 Weisong Zhao et al, "Temporal resolution enhancement in
 %   super-resolution imaging with auto-correlation two-step deconvolution
@@ -50,7 +50,7 @@ switch method
         estimate=max(estimate,0.001);
         for iter = 1:iteration
             if mod(iter,10)==0
-                fprintf('-----------------------iteration %d -----------------------\n',iter)
+                fprintf('iteration %d\n',iter)
             end
             estimate= estimate.*ifftn(conj(otf).*rliter(estimate,data,otf));
             estimate=max(estimate,1e-5);
@@ -63,7 +63,7 @@ switch method
         k=2;
         for iter = 1:iteration
             if mod(iter,10)==0
-                fprintf('-----------------------iteration %d -----------------------\n',iter)
+                fprintf('iteration %d\n',iter)
             end
             estimate= estimate.*(ifftn(conj(otf).*rliter(estimate,data,otf))).^k;
             %         estimate=estimate./max(max(estimate));
@@ -76,7 +76,7 @@ switch method
         delta=2;
         for iter = 1:iteration
             if mod(iter,10)==0
-                fprintf('-----------------------iteration %d -----------------------\n',iter)
+                fprintf('iteration %d\n',iter)
             end
             estimatek=estimate;
             estimate= estimate.*ifftn(conj(otf).*rliter(estimate,data,otf));
