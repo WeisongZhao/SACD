@@ -11,11 +11,11 @@ function result=Accelaration_DeconvLucy(data,psf,iteration,method)
 %------------------------------------------------
 % reference:
 % [1].D. S. C. Biggs and M. Andrews, "Acceleration of iterative image restoration
-% algorithms," Appl. Opt. 36(8), 1766¨C1775 (1997).
+% algorithms," Appl. Opt. 36(8), 1766–1775 (1997).
 
 %   Copyright  2018 Weisong Zhao et al, "Temporal resolution enhancement in
 %   super-resolution imaging with auto-correlation two-step deconvolution
-%   ," Opt. Express... 
+%   ," Opt. Express...
 %
 %    This program is free software: you can redistribute it and/or modify
 %    it under the terms of the GNU General Public License as published by
@@ -50,7 +50,7 @@ switch method
         estimate=max(estimate,0.001);
         for iter = 1:iteration
             if mod(iter,10)==0
-                fprintf('iteration %d\n',iter)
+                fprintf('iteration %d \n',iter)
             end
             estimate= estimate.*ifftn(conj(otf).*rliter(estimate,data,otf));
             estimate=max(estimate,1e-5);
@@ -63,7 +63,7 @@ switch method
         k=2;
         for iter = 1:iteration
             if mod(iter,10)==0
-                fprintf('iteration %d\n',iter)
+                fprintf('iteration %d \n',iter)
             end
             estimate= estimate.*(ifftn(conj(otf).*rliter(estimate,data,otf))).^k;
             %         estimate=estimate./max(max(estimate));
@@ -76,7 +76,7 @@ switch method
         delta=2;
         for iter = 1:iteration
             if mod(iter,10)==0
-                fprintf('iteration %d\n',iter)
+                fprintf('iteration %d \n',iter)
             end
             estimatek=estimate;
             estimate= estimate.*ifftn(conj(otf).*rliter(estimate,data,otf));
@@ -87,24 +87,25 @@ switch method
         end
         result=estimate(B:end-B, B:end-B)./max(max(estimate(B:end-B, B:end-B)));
     case 'Acce3'
-        yk=max(data,0.001);
-        xk1_stack(:,:,1)=data;
-        xk1_stack(:,:,2)=max(yk.*ifftn(conj(otf).*rliter(yk,data,otf)),0);
-        alpha=0;
-        gk_stack(:,:,1)=zeros(size(data));
-        gk_stack(:,:,2)=zeros(size(data));
-        for iter = 3:iteration
-            if mod(iter,10)==0
-                fprintf('iteration %d\n',iter)
-            end
-            if iter>2
-                alpha=sum(sum(gk_stack(:,:,iter-1).*gk_stack(:,:,iter-2)))/(sum(sum(gk_stack(:,:,iter-2).*gk_stack(:,:,iter-2)))+eps);
+        yk0=zeros(size(data));
+        yk=data;
+        xk=zeros(size(data));
+        vk=zeros(size(data));
+        for iter = 1:iteration
+            xk_update=xk;
+            xk= max(yk.*real(ifftn(conj(otf).*rliter(yk,data,otf)))./real(ifftn(fftn(ones(size(data))).*otf)),0.00001);
+            vk_update=vk;
+            vk=max(xk-yk,0.00001);
+            if iter==1
+                xk1= max(yk0.*real(ifftn(conj(otf).*rliter(yk0,data,otf)))./real(ifftn(fftn(ones(size(data))).*otf)),0.00001);
+                vk0=xk1-yk0;
+                alpha=sum(sum(vk.*vk0))/(sum(sum(vk0.*vk0))+eps);
+                alpha=max(min(alpha,1),0);
+            else
+                alpha=sum(sum(vk_update.*vk))/(sum(sum(vk_update.*vk_update))+eps);
                 alpha=max(min(alpha,1),0);
             end
-            yk=max(xk1_stack(:,:,iter-1)+alpha*(xk1_stack(:,:,iter-1)-xk1_stack(:,:,iter-2)),0);
-            xk1_stack(:,:,iter)= max(yk.*real(ifftn(conj(otf).*rliter(yk,data,otf)))./real(ifftn(fftn(ones(size(data))).*otf)),0);
-            gk_stack(:,:,iter)=max(xk1_stack(:,:,iter)-yk,0);
-            %             yk=yk./max(max(yk));
+            yk=max(xk+alpha*(xk-xk_update),0.00001);
         end
         result=yk(B:end-B, B:end-B)./max(max(yk(B:end-B, B:end-B)));
 end
