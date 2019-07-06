@@ -1,7 +1,7 @@
 ## SACD(**S**uper-resolution with **A**uto-**C**orrelation two-step **D**econvolution)
 
 ### Introduction
->This profile includding source code of the work: "**Faster super-resolution imaging with autocorrelation two-step deconvolution **".<br />
+>This profile includding source code of the work: " **Faster super-resolution imaging with autocorrelation two-step deconvolution** ".<br />
 >This program is free software: you can redistribute it and/or modify it under the terms of the **GNU** General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.<br />
 You are free to use this software package to analyse your fluctuation and all density of SMLM data, or generate your own algorithm. Please site the paper: coming soon...
 
