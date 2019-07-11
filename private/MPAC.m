@@ -14,9 +14,8 @@ function Result= MPAC(image,plane,n)
 % (SOFI)," Proc. Natl. Acad. Sci. 106(52), 22287¨C22292 (2009).
 
 %-------------------------------------------------------------------------------------
-%   Copyright  2018 Weisong Zhao et al, "Temporal resolution enhancement in
-%   super-resolution imaging with auto-correlation two-step deconvolution
-%   ," Opt. Express... 
+%   Copyright  2018 Weisong Zhao et al, "Faster super-resolution imaging
+%   with autocorrelation two-step deconvolution ," Opt. Express... 
 %
 %    This program is free software: you can redistribute it and/or modify
 %    it under the terms of the GNU General Public License as published by

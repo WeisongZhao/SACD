@@ -11,11 +11,10 @@ function result=Accelaration_DeconvLucy(data,psf,iteration,method)
 %------------------------------------------------
 % reference:
 % [1].D. S. C. Biggs and M. Andrews, "Acceleration of iterative image restoration
-% algorithms," Appl. Opt. 36(8), 1766â€“1775 (1997).
+% algorithms," Appl. Opt. 36(8), 1766â€?1775 (1997).
 
-%   Copyright  2018 Weisong Zhao et al, "Temporal resolution enhancement in
-%   super-resolution imaging with auto-correlation two-step deconvolution
-%   ," Opt. Express...
+%   Copyright  2018 Weisong Zhao et al, "Faster super-resolution imaging
+%   with autocorrelation two-step deconvolution ," Opt. Express... 
 %
 %    This program is free software: you can redistribute it and/or modify
 %    it under the terms of the GNU General Public License as published by
