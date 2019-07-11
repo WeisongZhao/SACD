@@ -87,7 +87,6 @@ switch method
         end
         result=estimate(B:end-B, B:end-B)./max(max(estimate(B:end-B, B:end-B)));
     case 'Acce3'
-        yk0=zeros(size(data));
         yk=data;
         xk=zeros(size(data));
         vk=zeros(size(data));
@@ -97,15 +96,12 @@ switch method
             vk_update=vk;
             vk=max(xk-yk,0.00001);
             if iter==1
-                xk1= max(yk0.*real(ifftn(conj(otf).*rliter(yk0,data,otf)))./real(ifftn(fftn(ones(size(data))).*otf)),0.00001);
-                vk0=xk1-yk0;
-                alpha=sum(sum(vk.*vk0))/(sum(sum(vk0.*vk0))+eps);
-                alpha=max(min(alpha,1),0);
+                alpha=0;
             else
                 alpha=sum(sum(vk_update.*vk))/(sum(sum(vk_update.*vk_update))+eps);
                 alpha=max(min(alpha,1),0);
             end
             yk=max(xk+alpha*(xk-xk_update),0.00001);
         end
-        result=yk(B:end-B, B:end-B)./max(max(yk(B:end-B, B:end-B)));
+        result=yk(B+1:end-B, B+1:end-B)./max(max(yk(B+1:end-B, B+1:end-B)));
 end
