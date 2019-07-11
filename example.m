@@ -20,5 +20,5 @@ clc;clear;close all;warning off;
 %-------------------------------------------------------------------------------------
 load HDT.mat
 image=SACD_recon(HDT(:,:,1:256),1.3,100*10^-9,488*10^-9,60);
-imshow(image,[0001,0.15],'Colormap',hot,'border','tight','initialmagnification','fit')
+imshow(image,[0.01,0.15],'Colormap',hot,'border','tight','initialmagnification','fit')
 set(gcf,'Position',[0,0,size(image,1),size(image,2)])
