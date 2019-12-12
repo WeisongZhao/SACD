@@ -10,7 +10,7 @@ function image=Fourier_interpolation (image0,N1,N2)
 
 %-------------------------------------------------------------------------------------
 %   Copyright  2018 Weisong Zhao et al, "Faster super-resolution imaging
-%   with autocorrelation two-step deconvolution ," Opt. Express... 
+%   with autocorrelation two-step deconvolution ,"
 %
 %    This program is free software: you can redistribute it and/or modify
 %    it under the terms of the GNU General Public License as published by
