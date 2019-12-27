@@ -1,6 +1,6 @@
 function Ipsf=Generate_PSF(pixel,lamda,NA,n,z)
 %-----------------------------------------------
-%Source code for generating PSF
+%Source code for generating PSF (Born-Wolf)
 %pixel     pixel size {example:65*10^-9}
 %lamda   wavelength {example:532*10^-9}
 %NA        NA {example:1.49}

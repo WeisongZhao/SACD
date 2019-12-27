@@ -1,4 +1,4 @@
-function image=Fourier_interpolation (image0,N1,N2)
+function image=Fourier_interpolation (input,N1,N2)
 %-----------------------------------------------
 %Source code for generating fourier interpolation
 %image0    single image waiting for inpolation
@@ -26,11 +26,11 @@ function image=Fourier_interpolation (image0,N1,N2)
 %    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 %-------------------------------------------------------------------------------------
 %%
-imagehuge=[image0,image0;image0,image0];
-image0fft=fftshift(fft2(imagehuge));
-[a,b]=size(image0fft);
+imagehuge=[input,input;input,input];
+inputfft=fftshift(fft2(imagehuge));
+[a,b]=size(inputfft);
 imagebig=zeros(a+2*N1,b+2*N2);
-imagebig(1+N1:end-N1,1+N2:end-N2)=image0fft;
+imagebig(1+N1:end-N1,1+N2:end-N2)=inputfft;
 imagebig=ifftshift(imagebig);
 imagehuge0=ifft2(imagebig);
 [c,d]=size(imagehuge0);

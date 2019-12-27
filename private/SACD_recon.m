@@ -12,7 +12,7 @@ function result=SACD_recon(data,NA,pixel,lamda,iter,mag,squre,order)
 
 %------------------------------------------------
 %Output:
-% result     SACD reconstruct result
+% result     SACD reconstructed result
 
 %-------------------------------------------------------------------------------------
 %   Copyright  2018 Weisong Zhao et al, "Faster super-resolution imaging
@@ -81,6 +81,7 @@ for i=1:siz
 end
 fprintf('Deconvolution and fourier interpolation done\n')
 fprintf('Generate cumulant\n\n')
+% I=I-mean(I,3);
 imag=MPAC(I,round(log2(siz)),order);
 fprintf('Cumulant done\n\n')
 result=Accelaration_DeconvLucy(imag,psf.^squre,iter,'Acce3');

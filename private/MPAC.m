@@ -4,18 +4,18 @@ function Result= MPAC(image,plane,n)
 %Inputs:
 % image     diffraction limit image sequence
 % plane     multiplan number{example:4}
-%n            Auto-correlation cumulant order  {example:2}
+% n            Auto-correlation cumulant order  {example:2}
 %------------------------------------------------
 %Output:
-% Result   MPAC reconstruct result
-%reference:
+% Result   MPAC reconstructed result
+% reference:
 %[1].T. Dertinger, R. Colyer, G. Iyer, S. Weiss, and J. Enderlein, "Fast,
 % background-free, 3D super-resolution optical fluctuation imaging
 % (SOFI)," Proc. Natl. Acad. Sci. 106(52), 22287¨C22292 (2009).
 
 %-------------------------------------------------------------------------------------
 %   Copyright  2018 Weisong Zhao et al, "Faster super-resolution imaging
-%   with autocorrelation two-step deconvolution ," 
+%   with autocorrelation two-step deconvolution ,"
 %
 %    This program is free software: you can redistribute it and/or modify
 %    it under the terms of the GNU General Public License as published by
@@ -41,19 +41,19 @@ end
 image0=reshape(image, a* b, c);
 [aa,bb]=size(image0);
 %%%%%%%%%%2^plane
-image_xulie=zeros(aa,bb,plane);
-image_xulie(:,:,1)=image0;
+image_sequence=zeros(aa,bb,plane);
+image_sequence(:,:,1)=image0;
 if plane~=1
     for image_z=2:1:plane
         for image_y=2:2:bb
-            image_xulie(:,image_y/2,image_z)=image_xulie(:,image_y,image_z-1)+image_xulie(:,image_y-1,image_z-1);
+            image_sequence(:,image_y/2,image_z)=image_sequence(:,image_y,image_z-1)+image_sequence(:,image_y-1,image_z-1);
         end
     end
 end
 Result0=zeros(a,b);
 for i=1:plane %
-    im=reshape(image_xulie(:,:,i), a,b,c);
-%     im=im0(:,:,1:round(c/plane));
+    im=reshape(image_sequence(:,:,i), a,b,c);
+    %     im=im0(:,:,1:round(c/plane));
     switch n
         case 2
             cum = mean(im(:,:,1:end-1).*im(:,:,2:end),3);
