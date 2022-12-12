@@ -1,7 +1,7 @@
 ## SACD(**S**uper-resolution method based on **A**uto-**C**orrelation two-step **D**econvolution)
 
 ## Attention
-This is an archived repository. The updated version can be found in [SACDm](https://github.com/WeisongZhao/SACDm) or [SACDj](https://github.com/WeisongZhao/SACDj)
+This is an archived repository. The updated version can be found in [SACDm](https://github.com/WeisongZhao/SACDm) or [SACDj](https://github.com/WeisongZhao/SACDj).
 
 ### Introduction
 >This profile includding source code of the work: " **Faster super-resolution imaging with autocorrelation two-step deconvolution** ".<br />
